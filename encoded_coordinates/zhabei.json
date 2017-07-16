@@ -1,0 +1,23 @@
+{
+	"id": "310108",
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			"@@ASG@BOCKCEBA@G@KBEDCLMVQ@EACDECABCDKECGDMEKFIGC@ONDF@FB@@DC@BHOVUJCFIGA@@RCJBNG@ABBDBB@DNBAJJ@@FB@@H@@@DF@ENB@BDD@BAT@BENDFDPB@AF@@G"
+		],
+		"encodeOffsets": [
+			[
+				124384,
+				32068
+			]
+		]
+	},
+	"properties": {
+		"cp": [
+			121.465689,
+			31.25318
+		],
+		"name": "闸北区",
+		"childNum": 1
+	}
+}

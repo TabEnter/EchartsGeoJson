@@ -1,0 +1,7 @@
+# echarts GeoJSON解压、压缩及合并算法
+
+> echarts官方下载页面提供的中国各行政区划地图相对滞后，部分行政区划已经合并，有时因展示效果需求，也需要将部分行政区块合并显示，因此echarts提供的原始地图往往不能满足实际项目的具体需求。
+
+> 仔细研究echarts的官方文档和源码就会发现，echarts提供下载的地图数据为GeoJSON格式（[GeoJson官网](http://geojson.org/){:target="_blank"}，为减少文件体积，echarts使用了ZigZag编码对行政区划对象geometry属性的coordinates字段进行了压缩。当我们需要合并两个相邻的行政区划多边形时，首先需要把被压缩的coordinates数组还原。这个还原算法echarts源码中就有。将需要合并的两个行政区的边缘坐标数组还原之后，删除两者的公共边节点，拼接新的多边形(这里需要手动比对，有时两个行政区划相邻部分的坐标点位不是完全重合)，再使用压缩算法(执行还原算法的逆运算)获得压缩后的行政区划对象geometry属性的coordinates和encodeOffsets。最后调整合并后的行政区划properties.cp(中心点坐标)，即可以获得满足需求的GeoJSON。
+
+> 本项目以合并前的上海市的静安区和闸北区数据为测试用例，shanghai.json为echarts官方提供的上海市GeoJSON，其中静安区与闸北区尚未合并，shanghai_merge.json为将静安区与闸北区合并为新静安区之后的GeoJSON，数据仅供参考。

@@ -1,0 +1,23 @@
+{
+	"id": "310106",
+	"geometry": {
+		"type": "Polygon",
+		"coordinates": [
+			"@@DOACU@BGSGQCELAJABIECBBNFHJB\\PABDF@FB@@DC@BHOVUJCFIGA@@RCJBNG@ABBDBB@DNBAJJ@@FB@@H@@@DF@ENB@BDD@BAT@BENDFDPB@AF@@G@AASG@BOCKCEBA@G@KBEDCLMVQ@EACDECABCDKECGDMEKFFM"
+		],
+		"encodeOffsets": [
+			[
+				124382,
+				31984
+			]
+		]
+	},
+	"properties": {
+		"cp": [
+			121.458131,
+			31.265819
+		],
+		"name": "静安区",
+		"childNum": 1
+	}
+}
